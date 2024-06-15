@@ -1,0 +1,56 @@
+name: Autograding Tests
+'on':
+- push
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: t07-01-01
+      id: t07-01-01
+      uses: education/autograding-io-grader@v1
+      with:
+        test-name: t07-01-01
+        setup-command: make compile
+        command: make -s test_01
+        input: ''
+        expected-output: "Pniel|4|female|0\r\nKapernaum|3|male|0\r\n12S21001|Dhino
+          Turnip|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|unassigned\r\n12S21010|Bobby
+          Siagian|2021|male|unassigned\r\n"
+        comparison-method: exact
+        timeout: 1
+        max-score: 40
+    - name: t07-02-01
+      id: t07-02-01
+      uses: education/autograding-io-grader@v1
+      with:
+        test-name: t07-02-01
+        setup-command: make compile
+        command: make -s test_02
+        input: ''
+        expected-output: "Pniel|4|female|0\r\nKapernaum|3|male|0\r\n12S21001|Dhino
+          Turnip|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|unassigned\r\n12S21010|Bobby
+          Siagian|2021|male|unassigned\r\n12S21001|Dhino Turnip|2021|male|Kapernaum\r\n12S21002|Marudut
+          Tampubolon|2021|male|Kapernaum\r\n12S21003|Jusas Tampubolon|2021|male|Kapernaum\r\n12S21004|Estomihi
+          pangaribuan|2021|male|unassigned\r\n12S21006|Weny Sitinjak|2021|female|Pniel\r\n12S21007|Dame
+          Sitinjak|2021|female|Pniel\r\n12S21008|Tuani Manurung|2021|male|unassigned\r\n12S21009|Mikhael
+          Pakpahan|2021|male|unassigned\r\n12S21010|Bobby Siagian|2021|male|unassigned\r\n12S21011|Aldi
+          Simamora|2021|male|unassigned\r\nPniel|4|female|2\r\nKapernaum|3|male|3\r\n"
+        comparison-method: exact
+        timeout: 1
+        max-score: 60
+    - name: Autograding Reporter
+      uses: education/autograding-grading-reporter@v1
+      env:
+        T07-01-01_RESULTS: "${{steps.t07-01-01.outputs.result}}"
+        T07-02-01_RESULTS: "${{steps.t07-02-01.outputs.result}}"
+      with:
+        runners: t07-01-01,t07-02-01

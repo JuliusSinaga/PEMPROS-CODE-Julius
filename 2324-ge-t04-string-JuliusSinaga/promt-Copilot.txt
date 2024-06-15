@@ -1,0 +1,56 @@
+1. Hai Co-Pilot, bagaimana membaca setiap tiga karakter numerik yang merupakan nilai ASCII dari suatu karakter dalam bahasa C dan mengkorversi serta menggabungkan tiap karakter dalam output
+2. Bagaimana cara mengubah karakter menjadi nilai ASCII dalam bahasa C?
+3. Bagaimana cara mengubah karakter numerik nilai ASCII menjadi karakter  dalam bahasa C?
+
+4. @workspace /explain Write an explanation for the active selection as paragraphs of text.
+
+```c
+// 12S23035 - Julius Kaisar Bona Theo Sinaga
+
+#include <stdio.h>
+#include <string.h>
+
+int main(int _argv, char **_argc) {
+  // Declare variables
+  char numerik[60], keluaran[60];
+  int i;
+
+  // Input
+  for (i = 0; i < 60; i++) {
+    scanf("%c", &numerik[i]);
+    if (numerik[i] == '\n') {
+      numerik[i] = '\0';
+      break;
+    } else {
+    }
+  }
+
+  // Process
+  for (i = 0; i < strlen(numerik); i+= 3) {
+    // Konversi karakter tiga angka ke integer
+    sscanf(numerik + i, "%3d", &keluaran[i / 3]);
+    
+    // Konversi integer ke karakter
+    sprintf(keluaran + i / 3, "%c", keluaran[i / 3]);
+  }
+
+  // Output
+  printf("%s\n", keluaran);
+
+  return 0;
+}
+```
+
+5. Apa itu fungsi strlen dalam bahasa c
+6. gcc t04_01.c -o t04_01
+t04_01.c: In function 'main':
+  t04_01.c:24:28: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+     24 |     sscanf(numerik + i, "%3d", &keluaran[i / 3]);
+        |                          ~~^   ~~~~~~~~~~~~~~~~
+        |                            |   |
+        |                            |   char *
+        |                            int *
+        |                          %3hhd
+  gcc t04_02.c -o t04_02
+
+  jelaskan

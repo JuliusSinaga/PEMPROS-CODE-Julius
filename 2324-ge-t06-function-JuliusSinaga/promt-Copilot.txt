@@ -1,0 +1,5 @@
+1. apa kegunaan fungsi malloc
+
+2. Bagaimana memindahkan nilai dari enum atau mengcopy nya
+
+3. Bagaimana untuk me print tipe data enum?

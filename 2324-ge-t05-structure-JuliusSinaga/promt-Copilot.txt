@@ -1,0 +1,6 @@
+1. Halo Copilot, bagaimana membentuk structure register dan enum yang berupa biodata mahasiswa pada bahasa C, bagaimana menginput dan outputnya
+2. Cara ngesplit String dalam Bahasa C
+3. Halo Copilot, Bagaimana konsep strtok
+4. Bagaimana Enum dalam Struct digunakan di fungsi utama dalam Bahasa c?
+5. Apa itu fungsi atoi
+6. Berikan saya penjelasan tentang fungsi strtok

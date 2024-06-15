@@ -1,0 +1,5 @@
+1. Fungsi  apa yang cocok untuk alokasi memori dinamis?
+
+2. Bagaimana cara menyatakan suatu nilai enum dari kalimat yang dipisah menggunakan strtok?
+
+3. Bagaimana cara mengubah string menjadi enum dalam bahasa C?

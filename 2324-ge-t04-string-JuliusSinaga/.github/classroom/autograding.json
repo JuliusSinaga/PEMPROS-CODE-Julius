@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "test-01_01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "099105104117121033\r\n",
+      "output": "cihuy!\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test-01_02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "089111117044032109101044032038032067\r\n",
+      "output": "You, me, & C\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test-01_03",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "074117115116052067111100101\r\n",
+      "output": "Just4Code\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test_01-04",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "043\r\n",
+      "output": "+\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "test_02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "Big O\r\n",
+      "output": "066105103032079013\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "test_02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "Jaka Sembung\r\n",
+      "output": "074097107097032083101109098117110103013\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "test_02-03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "c_total=blackscreen\r\n",
+      "output": "099095116111116097108061098108097099107115099114101101110013\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "test_02-04",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "C\r\n ",
+      "output": "067013\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    }
+  ]
+}

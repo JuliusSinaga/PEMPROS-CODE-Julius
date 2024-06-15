@@ -1,0 +1,1 @@
+1. Halo copilot, bagaimana menampilkan output pada array secara bergantian front-rear dan bergerak ke tengah-tengah array pada program bahasa c

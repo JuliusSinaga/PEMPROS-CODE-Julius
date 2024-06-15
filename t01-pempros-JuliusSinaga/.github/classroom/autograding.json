@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "test-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "12\r\nSD\r\nKristen",
+      "output": "3396",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 50
+    },
+    {
+      "name": "test-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "12\r\nSD\r\nIslam",
+      "output": "2772",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 50
+    }
+  ]
+}

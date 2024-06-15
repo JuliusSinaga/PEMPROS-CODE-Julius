@@ -1,0 +1,7 @@
+1. Bagaimana cara program pengulangan dengan menghitung bilangan x lalu ditampilkan 2 angka selanjutnya dan apabila angka input 11 maka 2 angka selanjutnya 12 dan kembali ke 1
+
+2. penggunaan looping while atau for pada bahasa c
+
+3. Bagaimana membentuk program waktu lama antrean dengan 2 input yaitu x1 dan x2, dimana x1 dan x2 merupakan jumlah pembelian dengan setiap antrean memakan waktu 3 menit dan setiap transaksi terbatas 3 pembelian.
+
+4. penggunaan switch pada bahasa c

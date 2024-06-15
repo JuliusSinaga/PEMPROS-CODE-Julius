@@ -1,0 +1,12 @@
+1. gcc t04_01.c -o t04_01
+  t04_01.c: In function 'main':
+  t04_01.c:24:28: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'char *' [-Wformat=]
+     24 |     sscanf(numerik + i, "%3d", &keluaran[i / 3]);
+        |                          ~~^   ~~~~~~~~~~~~~~~~
+        |                            |   |
+        |                            |   char *
+        |                            int *
+        |                          %3hhd
+  gcc t04_02.c -o t04_02
+
+  jelaskan dalam bahasa indonesia

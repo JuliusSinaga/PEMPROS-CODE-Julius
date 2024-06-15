@@ -1,0 +1,5 @@
+1. Halo Copilot, Bagaimana mengembangkan solusi dalam pengurutan karakter abjad di bahasa c?
+2. Halo Copilot, Bagaimana mengembangkan kode untuk pengurutan karakter di bahasa c menggunakan metode ASCII?
+3. Halo Copilot, Bantu saya untuk membuat code pengurutan abjad dengan metode konversi pada ASCII di bahasa C
+4. Halo Copilot, Bagaimana penggunaan strtok pada bahasa C?
+5. Halo copilot, bagaimana menggunakan fungsi strtok di bahasa C

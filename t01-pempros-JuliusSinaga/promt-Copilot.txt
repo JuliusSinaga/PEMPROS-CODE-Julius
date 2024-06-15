@@ -1,0 +1,63 @@
+1. bantu saya untuk membuat suatu operasi menghitung hari dengan diketahui tahun dengan menggunakan bahasa c
+(tidak ada jawaban terhadap prompt diatas)
+
+2. exercise.c: In function 'main':
+  exercise.c:12:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[12]' [-Wformat=]
+     12 |     scanf("%s", &start_sekolah);
+        |            ~^   ~~~~~~~~~~~~~~
+        |             |   |
+        |             |   char (*)[12]
+        |             char *
+  exercise.c:13:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[13]' [-Wformat=]
+     13 |     scanf("%s", &agama);
+        |            ~^   ~~~~~~
+        |             |   |
+        |             |   char (*)[13]
+        |             char *
+  
+  make: *** No rule to make target 'test_02'.  Stop.
+
+  Jelaskan dimana kesalahan diatas
+
+3. Bagaimana format if dalam bahasa c
+
+4. // 12S23035 - Julius Kaisar Bona Theo Sinaga
+
+#include <stdio.h>
+
+int main()
+{
+    int lama_sekolah;
+    char agama[13], start_sekolah[14];
+
+    // Input
+    scanf("%d", &lama_sekolah);
+    scanf("%s", start_sekolah);
+    scanf("%s", agama);
+
+    // Operasi
+    int hari_habis;
+
+    if ( agama[0] == "Kristen") {
+        hari_habis = (365 - 30 - 52) * lama_sekolah;
+    }
+    else if ( agama[0] == "Katolik") {
+        hari_habis = (365 - 30 - 52) * lama_sekolah;
+    }
+    else if ( agama[0] == "Islam") {
+        hari_habis = (365 - 30 - 52 - 52) * lama_sekolah;
+    }
+
+
+
+    // Output
+    printf("%d", hari_habis);
+
+    return 0;
+}
+
+Jelaskan apa yang salah disini
+
+5. Bagaimana melakukan perbandingan string dengan tipe char array dalam bahasa c
+
+6. bagaimana melakukan perbandingan string tanpa menggunakan library tambahan

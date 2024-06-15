@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "test_01-01",
+      "setup": "make compile",
+      "run": "./m01_01 2",
+      "input": "project#60#81\r\nfinal exam#40#78\r\n",
+      "output": "project;60;81\r\nfinal exam;40;78\r\n79.8\r\npassed\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test_01-02",
+      "setup": "make compile",
+      "run": "./m01_01 4",
+      "input": "quiz#20#47\r\nassignment#30#93\r\nmid exam#25#78\r\nfinal exam#25#81\r\n",
+      "output": "quiz;20;47\r\nassignment;30;93\r\nmid exam;25;78\r\nfinal exam;25;81\r\n77.1\r\npassed\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test_01-03",
+      "setup": "make compile",
+      "run": "./m01_01 5",
+      "input": "quiz#10#47\r\nassignment#20#63\r\nproject#20#55\r\nmid exam#20#40\r\nfinal exam#30#44\r\n",
+      "output": "quiz;10;47\r\nassignment;20;63\r\nproject;20;55\r\nmid exam;20;40\r\nfinal exam;30;44\r\n49.5\r\nfailed\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test_01-04",
+      "setup": "make compile",
+      "run": "./m01_01 1",
+      "input": "final exam#100#100\r\n",
+      "output": "final exam;100;100\r\n100.0\r\npassed\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "test_01-05",
+      "setup": "make compile",
+      "run": "./m01_01 3",
+      "input": "assignment#30#0\r\nmid exam#35#0\r\nfinal exam#35#0\r\n",
+      "output": "assignment;30;0\r\nmid exam;35;0\r\nfinal exam;35;0\r\n0.0\r\nfailed\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
